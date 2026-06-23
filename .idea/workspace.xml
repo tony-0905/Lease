@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="" />
+    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +24,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tony-0905/Lease.git",
+    "accountId": "da24af63-2a3f-4fa0-9a15-9d9b4c6a8fbf"
+  }
+}]]></component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="true" />
   </component>
@@ -240,7 +248,7 @@
       <workItem from="1781934257057" duration="12406000" />
       <workItem from="1782022808849" duration="22567000" />
       <workItem from="1782103021927" duration="31054000" />
-      <workItem from="1782191117588" duration="842000" />
+      <workItem from="1782191117588" duration="1450000" />
     </task>
     <servers />
   </component>
