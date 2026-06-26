@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="v.02" />
+    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="v.02">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/EmailConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/EmailProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/emailSend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-app/src/main/java/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/AppWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/AppWebApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,20 +35,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "tony-0905",
-      "reviewState": "AWAITING_REVIEW"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;tony-0905&quot;,
+      &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tony-0905",
-    "reviewState": "AWAITING_REVIEW"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tony-0905&quot;,
+    &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/tony-0905/Lease.git&quot;,
@@ -272,6 +284,7 @@
       <workItem from="1782371183866" duration="8998000" />
       <workItem from="1782390591401" duration="4355000" />
       <workItem from="1782462152150" duration="2613000" />
+      <workItem from="1782481453050" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="v.01">
       <option name="closed" value="true" />
@@ -349,8 +362,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/web/web-app/src/main/java/com/atguigu/lease/web/app/mapper/PaymentTypeMapper.java</url>
-          <line>18</line>
-          <properties class="com.atguigu.lease.web.app.mapper.PaymentTypeMapper" method="savePatWaterInfo">
+          <line>21</line>
+          <properties class="com.atguigu.lease.web.app.mapper.PaymentTypeMapper">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
