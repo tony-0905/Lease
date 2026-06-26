@@ -1,16 +1,14 @@
 package com.atguigu.lease.web.app.service.impl;
 
-import com.atguigu.lease.common.com.atguigu.lease.common.redis.emailsender.emailSend;
+import com.atguigu.lease.common.emailsender.emailSend;
 import com.atguigu.lease.common.constant.RedisConstant;
 import com.atguigu.lease.common.eception.LeaseException;
-import com.atguigu.lease.common.login.LoginUserHolder;
 import com.atguigu.lease.common.result.ResultCodeEnum;
 import com.atguigu.lease.common.utils.JwtUtil;
 import com.atguigu.lease.model.entity.UserInfo;
 import com.atguigu.lease.model.enums.BaseStatus;
 import com.atguigu.lease.web.app.mapper.UserInfoMapper;
 import com.atguigu.lease.web.app.service.LoginService;
-import com.atguigu.lease.web.app.service.UserInfoService;
 import com.atguigu.lease.web.app.vo.user.LoginVo;
 import com.atguigu.lease.web.app.vo.user.UserInfoVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -19,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -62,8 +59,6 @@ public class LoginServiceImpl implements LoginService {
         EmailSend.sendEmail(phone,code);
         return code;
     }
-
-
 
 
 

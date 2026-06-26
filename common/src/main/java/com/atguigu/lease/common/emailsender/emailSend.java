@@ -1,4 +1,4 @@
-package com.atguigu.lease.common.com.atguigu.lease.common.redis.emailsender;
+package com.atguigu.lease.common.emailsender;
 
 
 import lombok.extern.slf4j.Slf4j;
