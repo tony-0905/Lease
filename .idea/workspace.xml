@@ -25,20 +25,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "tony-0905",
-      "reviewState": "AWAITING_REVIEW"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;tony-0905&quot;,
+      &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tony-0905",
-    "reviewState": "AWAITING_REVIEW"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tony-0905&quot;,
+    &quot;reviewState&quot;: &quot;AWAITING_REVIEW&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/tony-0905/Lease.git&quot;,
@@ -273,7 +273,7 @@
       <workItem from="1782305765025" duration="5680000" />
       <workItem from="1782371183866" duration="8998000" />
       <workItem from="1782390591401" duration="4355000" />
-      <workItem from="1782462152150" duration="4651000" />
+      <workItem from="1782462152150" duration="6251000" />
     </task>
     <task id="LOCAL-00001" summary="v.01">
       <option name="closed" value="true" />
@@ -299,7 +299,23 @@
       <option name="project" value="LOCAL" />
       <updated>1782465355437</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="v.02">
+      <option name="closed" value="true" />
+      <created>1782474389018</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782474389018</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v.02">
+      <option name="closed" value="true" />
+      <created>1782474427124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782474427124</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
