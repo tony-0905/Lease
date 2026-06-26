@@ -10,7 +10,7 @@ import lombok.Data;
 @TableName(value = "apartment_facility")
 @Data
 //@Builder
-public class ApartmentFacility extends BaseEntity {
+public class ApartmentFacility extends BaseEntity  {
 
     private static final long serialVersionUID = 1L;
 

@@ -85,7 +85,11 @@ public class LeaseAgreementServiceImpl extends ServiceImpl<LeaseAgreementMapper,
             agreementDetailVo.setLeaseTermUnit(leaseTerm.getUnit());
 
             log.info("agreementDetailVo:{}");
-            redis.opsForValue().set(key, agreementDetailVo,30, TimeUnit.MINUTES);
+            try {
+                redis.opsForValue().set(key, agreementDetailVo,30, TimeUnit.MINUTES);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
         }
 
 

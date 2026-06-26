@@ -3,7 +3,27 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.lease.web.app.mapper.PaymentTypeMapper">
-
+    <insert id="savePatWaterInfo">
+        INSERT INTO water_fee_payment (
+            user_id,
+            username,
+            apartment_id,
+            room_id,
+            amount,
+            status,
+            create_time,
+            update_time
+        ) VALUES (
+                     #{userId},
+                     #{username},
+                     #{apartmentId},
+                     #{roomId},
+                     #{amount},
+                     #{status},
+                     #{createTime},
+                     #{updateTime}
+                 )
+    </insert>
     <select id="selectListByRoomId" resultType="com.atguigu.lease.model.entity.PaymentType">
 
         select id,

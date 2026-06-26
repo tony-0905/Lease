@@ -88,7 +88,11 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
             apartmentDetailVo.setLabelInfoList(labelInfoList);
             apartmentDetailVo.setMinRent(minRent);
 
-            redis.opsForValue().set(key, apartmentDetailVo);
+            try {
+                redis.opsForValue().set(key, apartmentDetailVo);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
         }
 
         return apartmentDetailVo;

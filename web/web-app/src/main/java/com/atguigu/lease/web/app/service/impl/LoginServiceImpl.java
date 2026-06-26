@@ -1,7 +1,9 @@
 package com.atguigu.lease.web.app.service.impl;
 
+import com.atguigu.lease.common.com.atguigu.lease.common.redis.emailsender.emailSend;
 import com.atguigu.lease.common.constant.RedisConstant;
 import com.atguigu.lease.common.eception.LeaseException;
+import com.atguigu.lease.common.login.LoginUserHolder;
 import com.atguigu.lease.common.result.ResultCodeEnum;
 import com.atguigu.lease.common.utils.JwtUtil;
 import com.atguigu.lease.model.entity.UserInfo;
@@ -17,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -27,9 +30,19 @@ public class LoginServiceImpl implements LoginService {
     private StringRedisTemplate redis;
     @Autowired
     private UserInfoMapper userInfoMapper;
+    @Autowired
+    private emailSend EmailSend;
     @Override
     public String getCode(String phone) {
-        String code = "8959";
+//        String code = "8959";
+        String code="8959";
+//        StringBuilder codeBuilder = new StringBuilder();
+//        for(int i=0;i<6;i++){
+//            codeBuilder.append(new Random().nextInt(10));
+//        }
+//        code = codeBuilder.toString();
+
+
         log.info("发送验证码：{}",code);
         System.out.println("验证码:" + code);
 
@@ -43,10 +56,10 @@ public class LoginServiceImpl implements LoginService {
             if(RedisConstant.APP_LOGIN_CODE_TTL_SEC - expire < RedisConstant.APP_LOGIN_CODE_RESEND_TIME_SEC){
                 throw new LeaseException(ResultCodeEnum.APP_SEND_SMS_TOO_OFTEN);
             }
-
         }
 
         redis.opsForValue().set(key,code,RedisConstant.APP_LOGIN_CODE_TTL_SEC, TimeUnit.SECONDS);
+        EmailSend.sendEmail(phone,code);
         return code;
     }
 

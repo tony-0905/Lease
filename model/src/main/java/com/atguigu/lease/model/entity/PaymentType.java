@@ -6,10 +6,12 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Schema(description = "支付方式表")
 @TableName(value = "payment_type")
 @Data
-public class PaymentType extends BaseEntity {
+public class PaymentType extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

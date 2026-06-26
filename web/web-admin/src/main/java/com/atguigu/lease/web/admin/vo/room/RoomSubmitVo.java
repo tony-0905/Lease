@@ -5,12 +5,13 @@ import com.atguigu.lease.web.admin.vo.graph.GraphVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 
 @Data
 @Schema(description = "房间信息")
-public class RoomSubmitVo extends RoomInfo {
+public class RoomSubmitVo extends RoomInfo implements Serializable {
 
     @Schema(description = "图片列表")
     private List<GraphVo> graphVoList;

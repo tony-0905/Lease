@@ -233,7 +233,11 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
             roomDetailVo.setPaymentTypeList(paymentTypeList);
             roomDetailVo.setLeaseTermList(leaseTermList);
 
-            redis.opsForValue().set(key, roomDetailVo, 30, java.util.concurrent.TimeUnit.MINUTES);
+            try {
+                redis.opsForValue().set(key, roomDetailVo, 10, java.util.concurrent.TimeUnit.MINUTES);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
             log.info("管理端房间详情缓存已设置:{}", id);
         }
 

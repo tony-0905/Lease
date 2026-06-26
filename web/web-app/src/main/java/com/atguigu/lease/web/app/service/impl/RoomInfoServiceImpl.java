@@ -22,10 +22,13 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.UUIDEditor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author liubo
@@ -115,7 +118,12 @@ public class RoomInfoServiceImpl extends ServiceImpl<RoomInfoMapper, RoomInfo>
             roomDetailVo.setFeeValueVoList(feeValueVoList);
             roomDetailVo.setLeaseTermList(leaseTermList);
             log.info("保存redis缓存:{}", roomDetailVo);
-            redis.opsForValue().set(key, roomDetailVo);
+            
+            try {
+                redis.opsForValue().set(key, roomDetailVo, 15, TimeUnit.MINUTES);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
         }
 
 

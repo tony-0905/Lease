@@ -18,11 +18,19 @@ spring:
   jackson:
     time-zone: GMT+8
 
+
   data:
     redis:
-     host: 192.168.100.101
-     port: 6379
-     database: 0
+      host: 192.168.100.101
+      port: 6379
+      database: 0
+      timeout: 3000
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: -1
 
 #用于打印框架生成的sql语句，便于调试
 mybatis-plus:
@@ -30,3 +38,15 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 springdoc:
   default-flat-param-object: true
+email:
+  host: smtp.126.com
+  port: 465
+  username: along_0905@126.com
+  password: WLsnVC6tvW5c8JY
+  ssl: true
+
+minio:
+  endpoint: http://192.168.100.101:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: app

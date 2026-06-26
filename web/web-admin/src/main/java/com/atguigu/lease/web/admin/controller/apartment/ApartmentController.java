@@ -1,6 +1,7 @@
 package com.atguigu.lease.web.admin.controller.apartment;
 
 
+import com.atguigu.lease.common.constant.RedisConstant;
 import com.atguigu.lease.common.result.Result;
 import com.atguigu.lease.model.entity.ApartmentInfo;
 import com.atguigu.lease.model.enums.ReleaseStatus;
@@ -15,7 +16,9 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,14 +27,24 @@ import java.util.List;
 @Tag(name = "公寓信息管理")
 @RestController
 @RequestMapping("/admin/apartment")
+@Slf4j
 public class ApartmentController {
 
     @Autowired
     private ApartmentInfoService apartmentInfoService;
-
+    @Autowired
+    private RedisTemplate<String , Object> redis;
     @Operation(summary = "保存或更新公寓信息")
     @PostMapping("saveOrUpdate")
     public Result saveOrUpdate(@RequestBody ApartmentSubmitVo apartmentSubmitVo) {
+        String adminKey = RedisConstant.ADMIN_APARTMENT_PREFIX + apartmentSubmitVo.getId();
+        String appKey = RedisConstant.APP_APARTMENT_PREFIX + apartmentSubmitVo.getId();
+        try {
+            redis.delete(adminKey);
+            redis.delete(appKey);
+        } catch (Exception e) {
+            log.warn("Redis缓存删除失败:{}", e.getMessage());
+        }
         apartmentInfoService.saveOrUpdateApartment(apartmentSubmitVo);
         return Result.ok();
     }

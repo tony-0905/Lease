@@ -67,7 +67,11 @@ public class ViewAppointmentServiceImpl extends ServiceImpl<ViewAppointmentMappe
             detailVo.setApartmentItemVo(apartmentItemVo);
 
             log.info("缓存未命中,查询数据库:{}", id);
-            redis.opsForValue().set(key, detailVo,30, TimeUnit.MINUTES);
+            try {
+                redis.opsForValue().set(key, detailVo,30, TimeUnit.MINUTES);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
         }
 
 

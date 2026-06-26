@@ -3,9 +3,11 @@ package com.atguigu.lease.web.admin.vo.room;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Schema(description = "房间查询实体")
 @Data
-public class RoomQueryVo {
+public class RoomQueryVo  implements Serializable {
 
     @Schema(description = "省份Id")
     private Long provinceId;

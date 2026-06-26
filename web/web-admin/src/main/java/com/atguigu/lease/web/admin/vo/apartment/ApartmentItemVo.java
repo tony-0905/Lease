@@ -4,10 +4,12 @@ import com.atguigu.lease.model.entity.ApartmentInfo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+import java.io.Serializable;
+
 
 @Data
 @Schema(description = "后台管理系统公寓列表实体")
-public class ApartmentItemVo extends ApartmentInfo {
+public class ApartmentItemVo extends ApartmentInfo implements Serializable {
 
     @Schema(description = "房间总数")
     private Long totalRoomCount;

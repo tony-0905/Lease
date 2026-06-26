@@ -28,6 +28,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author liubo
@@ -149,6 +150,7 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
             apartmentfeevalueservice.saveBatch(apartmentFeeValueList);
         }
 
+
     }
 
     @Override
@@ -193,7 +195,11 @@ public class ApartmentInfoServiceImpl extends ServiceImpl<ApartmentInfoMapper, A
             apartmentDetailVo.setFeeValueVoList(feeValueVoList);
 
             log.info("保存redis缓存:{}", apartmentDetailVo);
-            redis.opsForValue().set(key, apartmentDetailVo);
+            try {
+                redis.opsForValue().set(key, apartmentDetailVo,15, TimeUnit.MINUTES);
+            } catch (Exception e) {
+                log.warn("Redis缓存写入失败:{}", e.getMessage());
+            }
             outapartmentDetailVo= apartmentDetailVo;
         }
 
