@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="v.02">
+    <list default="true" id="41df1203-3157-4a60-918a-19b898686944" name="更改" comment="almost done any function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/EmailConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/EmailProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/atguigu/lease/common/emailsender/emailSend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/EmailProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/atguigu/lease/common/com/atguigu/lease/common/redis/emailsender/emailSend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-app/src/main/java/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/src/main/java/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/AppWebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/AppWebApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/web-app/target/classes/com/atguigu/lease/web/app/service/impl/LoginServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +274,7 @@
       <workItem from="1782371183866" duration="8998000" />
       <workItem from="1782390591401" duration="4355000" />
       <workItem from="1782462152150" duration="2613000" />
-      <workItem from="1782481453050" duration="527000" />
+      <workItem from="1782481453050" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="v.01">
       <option name="closed" value="true" />
@@ -310,16 +300,46 @@
       <option name="project" value="LOCAL" />
       <updated>1782465355437</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="almost done any function">
+      <option name="closed" value="true" />
+      <created>1782482431410</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782482431410</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="b8843cff-384d-49ca-9114-656c0e9966c8" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="b8843cff-384d-49ca-9114-656c0e9966c8">
           <value>
             <State>
               <option name="FILTERS">
@@ -342,7 +362,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v.01" />
     <MESSAGE value="v.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.02" />
+    <MESSAGE value="almost done any function" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done any function" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

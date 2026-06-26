@@ -1,0 +1,121 @@
+2026-06-26 21:46:03.575 [main] INFO  com.atguigu.lease.web.app.AppWebApplication-Starting AppWebApplication using Java 17.0.17 with PID 24480 (D:\java-project\xaingmu\lease\web\web-app\target\classes started by lenovo in D:\java-project\xaingmu\lease)
+2026-06-26 21:46:03.577 [main] INFO  com.atguigu.lease.web.app.AppWebApplication-No active profile set, falling back to 1 default profile: "default"
+2026-06-26 21:46:04.576 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-26 21:46:04.578 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-26 21:46:04.633 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'apartmentFacilityMapper' and 'com.atguigu.lease.web.app.mapper.ApartmentFacilityMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'apartmentFeeValueMapper' and 'com.atguigu.lease.web.app.mapper.ApartmentFeeValueMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'apartmentInfoMapper' and 'com.atguigu.lease.web.app.mapper.ApartmentInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'apartmentLabelMapper' and 'com.atguigu.lease.web.app.mapper.ApartmentLabelMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'attrKeyMapper' and 'com.atguigu.lease.web.app.mapper.AttrKeyMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.724 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'attrValueMapper' and 'com.atguigu.lease.web.app.mapper.AttrValueMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'browsingHistoryMapper' and 'com.atguigu.lease.web.app.mapper.BrowsingHistoryMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'cityInfoMapper' and 'com.atguigu.lease.web.app.mapper.CityInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'districtInfoMapper' and 'com.atguigu.lease.web.app.mapper.DistrictInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'facilityInfoMapper' and 'com.atguigu.lease.web.app.mapper.FacilityInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'feeKeyMapper' and 'com.atguigu.lease.web.app.mapper.FeeKeyMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'feeValueMapper' and 'com.atguigu.lease.web.app.mapper.FeeValueMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.725 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'graphInfoMapper' and 'com.atguigu.lease.web.app.mapper.GraphInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'labelInfoMapper' and 'com.atguigu.lease.web.app.mapper.LabelInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'leaseAgreementMapper' and 'com.atguigu.lease.web.app.mapper.LeaseAgreementMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'leaseTermMapper' and 'com.atguigu.lease.web.app.mapper.LeaseTermMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'paymentTypeMapper' and 'com.atguigu.lease.web.app.mapper.PaymentTypeMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'provinceInfoMapper' and 'com.atguigu.lease.web.app.mapper.ProvinceInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomAttrValueMapper' and 'com.atguigu.lease.web.app.mapper.RoomAttrValueMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomFacilityMapper' and 'com.atguigu.lease.web.app.mapper.RoomFacilityMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomInfoMapper' and 'com.atguigu.lease.web.app.mapper.RoomInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomLabelMapper' and 'com.atguigu.lease.web.app.mapper.RoomLabelMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomLeaseTermMapper' and 'com.atguigu.lease.web.app.mapper.RoomLeaseTermMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'roomPaymentTypeMapper' and 'com.atguigu.lease.web.app.mapper.RoomPaymentTypeMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.atguigu.lease.web.app.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-Skipping MapperFactoryBean with name 'viewAppointmentMapper' and 'com.atguigu.lease.web.app.mapper.ViewAppointmentMapper' mapperInterface. Bean already defined with the same name!
+2026-06-26 21:46:04.726 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner-No MyBatis mapper was found in '[com.atguigu.lease.web.app.mapper]' package. Please check your configuration.
+2026-06-26 21:46:05.181 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2026-06-26 21:46:05.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-26 21:46:05.189 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-06-26 21:46:05.189 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.7]
+2026-06-26 21:46:05.340 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-06-26 21:46:05.340 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1716 ms
+2026-06-26 21:46:07.765 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-06-26 21:46:07.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2026-06-26 21:46:07.832 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2026-06-26 21:46:07.843 [main] INFO  com.atguigu.lease.web.app.AppWebApplication-Started AppWebApplication in 4.709 seconds (process running for 5.618)
+2026-06-26 21:46:08.093 [RMI TCP Connection(1)-192.168.124.50] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-26 21:46:08.094 [RMI TCP Connection(1)-192.168.124.50] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-06-26 21:46:08.097 [RMI TCP Connection(1)-192.168.124.50] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2026-06-26 21:46:08.108 [RMI TCP Connection(4)-192.168.124.50] INFO  com.zaxxer.hikari.HikariDataSource-SPHHikariPool - Starting...
+2026-06-26 21:46:08.253 [RMI TCP Connection(4)-192.168.124.50] INFO  com.zaxxer.hikari.pool.HikariPool-SPHHikariPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@80ae07e
+2026-06-26 21:46:08.257 [RMI TCP Connection(4)-192.168.124.50] INFO  com.zaxxer.hikari.HikariDataSource-SPHHikariPool - Start completed.
+2026-06-26 21:51:49.126 [http-nio-8081-exec-4] INFO  c.a.lease.web.app.service.impl.LoginServiceImpl-发送验证码：8959
+2026-06-26 21:51:49.171 [http-nio-8081-exec-4] INFO  com.atguigu.lease.common.emailsender.emailSend-准备向邮箱 13888888888 发送验证码
+2026-06-26 21:51:49.813 [http-nio-8081-exec-4] ERROR com.atguigu.lease.common.emailsender.emailSend-邮件发送失败: 13888888888
+javax.mail.AuthenticationFailedException: 535 Error: authentication failed
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:932)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:843)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:748)
+	at javax.mail.Service.connect(Service.java:388)
+	at javax.mail.Service.connect(Service.java:246)
+	at javax.mail.Service.connect(Service.java:195)
+	at javax.mail.Transport.send0(Transport.java:254)
+	at javax.mail.Transport.send(Transport.java:124)
+	at com.atguigu.lease.common.emailsender.emailSend.sendEmail(emailSend.java:43)
+	at com.atguigu.lease.web.app.service.impl.LoginServiceImpl.getCode(LoginServiceImpl.java:59)
+	at com.atguigu.lease.web.app.controller.login.LoginController.getCode(LoginController.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-06-26 21:51:55.036 [http-nio-8081-exec-2] WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta-Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @1d296da
+2026-06-26 21:54:43.095 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-SPHHikariPool - Shutdown initiated...
+2026-06-26 21:54:43.096 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-SPHHikariPool - Shutdown completed.
