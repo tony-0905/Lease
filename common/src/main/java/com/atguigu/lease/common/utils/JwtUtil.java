@@ -13,7 +13,7 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    private static long tokenExpiration = 60 * 60 * 10000L;
+    private static long tokenExpiration = 60 * 60 * 100L;
     private static SecretKey tokenSignKey = Keys.hmacShaKeyFor("nVyWvEheMxaPuESwQAfpyBnTk5DTw8bx".getBytes());
 
     public static String createToken(Long UserId,String UserName){

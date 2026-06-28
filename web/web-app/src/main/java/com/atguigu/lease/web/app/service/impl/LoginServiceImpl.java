@@ -56,7 +56,7 @@ public class LoginServiceImpl implements LoginService {
         }
 
         redis.opsForValue().set(key,code,RedisConstant.APP_LOGIN_CODE_TTL_SEC, TimeUnit.SECONDS);
-        EmailSend.sendEmail(phone,code);
+//        EmailSend.sendEmail(phone,code);
         return code;
     }
 
